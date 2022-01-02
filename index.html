@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <title>Whatfix - UI Assignment</title>
+</head>
+<body>
+    <!-- navigation bar starts Here -->
+    <nav class="navbar">
+        <h1 class="nav-brand">Company</h1>
+        <!--Toggle navbar on mobile button-->
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+
+        </a>
+        <!--Open other menu on navbar button-->
+        <div class="right-toggle-btn">
+			<span class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+		</div>
+        <!--Navbar links-->
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#About Us">About Us</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Contact Us">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero section starts here -->
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-heading">Web development <br>
+                is fun</h1>
+            <p class="subtext">Thanks for taking this challenge .We're excited to<br>
+                see how you tackle this Challenge.</p>
+            <div class="btns">
+                <a href="" class="btn-1">Learn More</a>
+                <a href="" class="btn-2">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    const toggleNavbarOnMobileButton = document.getElementsByClassName('toggle-button')[0];
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0];
+
+    toggleNavbarOnMobileButton.addEventListener('click', () => {
+
+    //To open the Navbar add active class and to close the Navbar remove the active class.
+    navbarLinks.classList.toggle('active');
+    })
+</script>
+</html> 
